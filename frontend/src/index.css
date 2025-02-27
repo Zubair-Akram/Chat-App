@@ -1,0 +1,86 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body takes full width and height */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  /* Choose a readable font */
+  background-color: #f8f9fa;
+  /* Light background for a clean look */
+}
+
+/* Ensure the main container fits properly */
+.container {
+  max-width: 1200px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center content */
+  padding: 0 15px;
+  /* Add some padding */
+}
+
+/* Fixed Header */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+/* Main content should not go under fixed header */
+.main-content {
+  padding-top: 60px;
+  /* Adjust based on header height */
+}
+
+/* Chat Box Styling */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  /* Adjust based on header height */
+  overflow-y: auto;
+  /* Enable vertical scrolling if needed */
+  padding: 15px;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}

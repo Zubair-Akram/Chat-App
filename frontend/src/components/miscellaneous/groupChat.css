@@ -1,0 +1,132 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-badge-container {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-badge {
+  background-color: #38b2ac;
+  color: white;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.user-badge .close {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.input-field {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.update-btn {
+  background-color: #38b2ac;
+  color: white;
+  padding: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.update-btn:hover {
+  background-color: #2c9a94;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-result {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result .user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f8f8f8;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.search-result .user-item button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-result .user-item button:hover {
+  background-color: #45a049;
+}
+
+.leave-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.leave-btn:hover {
+  background-color: darkred;
+}
